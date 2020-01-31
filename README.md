@@ -1,6 +1,9 @@
 ## wxWidgets templates
 
-Use cmake for build (wxWidgets will be download by cmake).
+Use cmake for build.
+
+options:
+* USE_SYSTEM_WX - ON: use system installed wxWidgets; OFF: download and build from sources (default ON)
 
 About templates:
-* app1 - simple application with window
+* 01_hello - simple application with window

@@ -2,5 +2,7 @@ cmake_minimum_required(VERSION 3.14 FATAL_ERROR)
 
 project(wxTemplate)
 
+option(USE_SYSTEM_WX "Use system wxWidgets" ON)
+
 add_subdirectory(third_party)
-add_subdirectory(app1)
+add_subdirectory(01_hello)
