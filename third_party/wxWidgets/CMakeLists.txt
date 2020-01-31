@@ -1,6 +1,6 @@
 if(USE_SYSTEM_WX)
     # Use standart way for find wxWidgets
-    find_package(wxWidgets REQUIRED adv core base)
+    find_package(wxWidgets REQUIRED)
 
     # Meta target for easy use wxWidgets
     add_library(wx INTERFACE)
