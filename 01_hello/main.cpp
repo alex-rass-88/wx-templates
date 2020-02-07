@@ -4,7 +4,7 @@
 // Application class
 class myApp : public wxApp {
  public:
-  virtual bool OnInit();
+  bool OnInit() override;
 };
 
 // Frame class
