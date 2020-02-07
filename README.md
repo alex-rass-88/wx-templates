@@ -7,3 +7,5 @@ options:
 
 About templates:
 * 01_hello - simple application with window
+* 02_wxformbuilder - wxFormBuilder example
+
