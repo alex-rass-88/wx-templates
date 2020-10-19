@@ -30,7 +30,7 @@ else()
     # Download and build wxWidgets from sources
 
     # wxWidgets version
-    set(WX_VERSION 3.1.3)
+    set(WX_VERSION 3.1.4)
 
     set(WX_SRC_ARCHIVE "${CMAKE_CURRENT_SOURCE_DIR}/wxWidgets-${WX_VERSION}.tar.bz2")
     set(WX_SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/wxWidgets-${WX_VERSION}")
@@ -81,57 +81,57 @@ else()
 
     target_link_libraries(wx
         INTERFACE
-            base
-            core
-            adv
-            html
-            net
-            qa
-            aui
-            richtext
-            xml
-            xrc
+            wxbase
+            wxcore
+            wxadv
+            wxhtml
+            wxnet
+            wxqa
+            wxaui
+            wxrichtext
+            wxxml
+            wxxrc
     )
 
     if(wxUSE_PROPGRID)
         target_link_libraries(wx
             INTERFACE
-                propgrid
+                wxpropgrid
         )
     endif()
 
     if(wxUSE_STC)
         target_link_libraries(wx
             INTERFACE
-                stc
+                wxstc
         )
     endif()
 
     if(wxUSE_RIBBON)
         target_link_libraries(wx
             INTERFACE
-                ribbon
+                wxribbon
         )
     endif()
 
     if(wxUSE_WEBVIEW)
         target_link_libraries(wx
             INTERFACE
-                webview
+                wxwebview
         )
     endif()
 
     if(wxUSE_MEDIACTRL)
         target_link_libraries(wx
             INTERFACE
-                media
+                wxmedia
         )
     endif()
 
     if(wxUSE_OPENGL)
         target_link_libraries(wx
             INTERFACE
-                gl
+                wxgl
         )
     endif()
 
